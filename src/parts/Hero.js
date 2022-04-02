@@ -12,11 +12,10 @@ export default function Hero() {
                 Yogi Delfiandra
               </span>
             </h1>
-            <h2 className='font-medium text-slate-500 text-lg mb-5 lg:text-2xl'>
-              Junior Web Developer &{' '}
-              <span className='text-dark'>Content Creator</span>
+            <h2 className='font-medium text-secondary text-lg mb-5 lg:text-2xl'>
+              Web Developer & <span className='text-dark'>Content Creator</span>
             </h2>
-            <p className='font-medium text-slate-400 mb-10 leading-relaxed'>
+            <p className='font-medium text-secondary mb-10 leading-relaxed'>
               Belajar Web Programming itu menyenangkan bukan.{' '}
               <span className='text-dark font-bold'>bukan!</span>
             </p>
