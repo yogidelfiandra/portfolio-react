@@ -3,11 +3,12 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '1.25rem',
+      padding: '1rem',
     },
     extend: {
       colors: {
         primary: '#10b981',
+        secondary: '#64748b',
         dark: '#0f172a',
       },
       screens: {
