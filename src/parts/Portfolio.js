@@ -9,10 +9,10 @@ export default function Portfolio() {
             <h3 className='font-semibold text-lg text-primary mb-2'>
               Portfolio
             </h3>
-            <h4 className='font-bold text-dark text-3xl mb-4'>
+            <h4 className='font-bold text-dark text-3xl sm:text-4xl lg:text-5xl mb-4'>
               Project Terbaru
             </h4>
-            <p className='font-medium text-md text-secondary'>
+            <p className='font-medium text-base text- text-secondary md:text-lg'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed
               ex soluta voluptate, veritatis reiciendis culpa eos debitis
               consectetur ullam.
