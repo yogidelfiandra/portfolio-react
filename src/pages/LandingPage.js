@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../parts/About';
+import Clients from '../parts/Clients';
 import Header from '../parts/Header';
 import Hero from '../parts/Hero';
 import Portfolio from '../parts/Portfolio';
@@ -11,6 +12,7 @@ export default function LandingPage() {
       <Hero />
       <About />
       <Portfolio />
+      <Clients />
     </>
   );
 }
