@@ -5,7 +5,7 @@ export default function Hero() {
     <section id='home' className='pt-36'>
       <div className='container'>
         <div className='flex flex-wrap'>
-          <div className='w-full self-center px-4 lg:w-1/2'>
+          <div className='w-full self-center px-4 md:w-1/2'>
             <h1 className='text-base font-semibold text-primary md:text-xl'>
               Halo semua 👋, saya{' '}
               <span className='block font-bold text-4xl mt-1 mb-1.5 text-dark lg:text-5xl'>
@@ -21,18 +21,18 @@ export default function Hero() {
             </p>
 
             <a
-              href='#'
+              href='/whatsApp'
               className='bg-primary text-base px-8 py-3 text-white rounded-full hover:shadow-sm hover:opacity-90 transition duration-300 ease-in-out'
             >
               Hubungi Saya
             </a>
           </div>
-          <div className='w-full self-end px-4 lg:w-1/2'>
-            <div className='relative mt-10 lg:mt-0 lg:right-0'>
+          <div className='w-full self-end px-4 md:w-1/2'>
+            <div className='relative mt-10 md:mt-0 lg:mt-0 lg:right-0'>
               <img
                 src='images/yogidelfiandra.png'
                 alt='yogidelfiandra'
-                className='max-w-full mx-auto lg:w-3/4'
+                className='max-w-full mx-auto md:w-3/4'
               />
             </div>
           </div>

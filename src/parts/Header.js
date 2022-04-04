@@ -44,7 +44,7 @@ export default function Header() {
               <li className='group'>
                 <Link
                   to='/'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 flex group-hover:text-primary'
+                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Beranda
                 </Link>
@@ -52,7 +52,7 @@ export default function Header() {
               <li className='group'>
                 <Link
                   to='/about'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 flex group-hover:text-primary'
+                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Tentang Saya
                 </Link>
@@ -60,7 +60,7 @@ export default function Header() {
               <li className='group'>
                 <Link
                   to='/portfolio'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 flex group-hover:text-primary'
+                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Portfolio
                 </Link>
@@ -68,7 +68,7 @@ export default function Header() {
               <li className='group'>
                 <Link
                   to='/clients'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 flex group-hover:text-primary'
+                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Clients
                 </Link>
@@ -76,7 +76,7 @@ export default function Header() {
               <li className='group'>
                 <Link
                   to='/blog'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 flex group-hover:text-primary'
+                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Blog
                 </Link>
@@ -84,7 +84,7 @@ export default function Header() {
               <li className='group'>
                 <Link
                   to='/contact'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 flex group-hover:text-primary'
+                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Contact
                 </Link>
