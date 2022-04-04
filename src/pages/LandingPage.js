@@ -3,6 +3,7 @@ import About from '../parts/About';
 import Blog from '../parts/Blog';
 import Clients from '../parts/Clients';
 import Contact from '../parts/Contact';
+import Experience from '../parts/Experience';
 import Footer from '../parts/Footer';
 import Header from '../parts/Header';
 import Hero from '../parts/Hero';
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <Header />
       <Hero />
       <About />
+      <Experience />
       <Portfolio />
       <Clients />
       <Blog />
