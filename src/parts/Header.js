@@ -44,7 +44,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#home'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Beranda
                 </a>
@@ -52,7 +52,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#about'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Tentang Saya
                 </a>
@@ -60,7 +60,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#portfolio'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Portfolio
                 </a>
@@ -68,7 +68,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#clients'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Clients
                 </a>
@@ -76,7 +76,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#blog'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Blog
                 </a>
@@ -84,7 +84,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#contact'
-                  className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Contact
                 </a>

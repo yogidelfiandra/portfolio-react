@@ -40,7 +40,7 @@ export default function Blog() {
                   eum.
                 </p>
                 <Link
-                  to='#'
+                  to='/tips-belajar-programming'
                   className='font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80'
                 >
                   Baca Selengkapnya
@@ -69,7 +69,7 @@ export default function Blog() {
                   doloribus autem vel!
                 </p>
                 <Link
-                  to='#'
+                  to='/review-keyboard-gmmk-pro'
                   className='font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80'
                 >
                   Baca Selengkapnya
@@ -98,7 +98,7 @@ export default function Blog() {
                   Asperiores!
                 </p>
                 <Link
-                  to='#'
+                  to='/penulisan-syntax-code-yang-benar'
                   className='font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80'
                 >
                   Baca Selengkapnya

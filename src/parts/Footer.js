@@ -29,18 +29,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to='/teknologi'
+                  to='/technology'
                   className='inline-block text-base hover:text-primary mb-3'
                 >
-                  Teknologi
+                  Technology
                 </Link>
               </li>
               <li>
                 <Link
-                  to='/gaya-hidup'
+                  to='/lifestyle'
                   className='inline-block text-base hover:text-primary mb-3'
                 >
-                  Programming
+                  Lifestyle
                 </Link>
               </li>
             </ul>
