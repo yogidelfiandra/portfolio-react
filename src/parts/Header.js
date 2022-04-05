@@ -42,52 +42,52 @@ export default function Header() {
           >
             <ul className='block lg:flex'>
               <li className='group'>
-                <Link
-                  to='/'
+                <a
+                  href='#home'
                   className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Beranda
-                </Link>
+                </a>
               </li>
               <li className='group'>
-                <Link
-                  to='/about'
+                <a
+                  href='#about'
                   className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Tentang Saya
-                </Link>
+                </a>
               </li>
               <li className='group'>
-                <Link
-                  to='/portfolio'
+                <a
+                  href='#portfolio'
                   className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Portfolio
-                </Link>
+                </a>
               </li>
               <li className='group'>
-                <Link
-                  to='/clients'
+                <a
+                  href='#clients'
                   className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Clients
-                </Link>
+                </a>
               </li>
               <li className='group'>
-                <Link
-                  to='/blog'
+                <a
+                  href='#blog'
                   className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Blog
-                </Link>
+                </a>
               </li>
               <li className='group'>
-                <Link
-                  to='/contact'
+                <a
+                  href='#contact'
                   className='text-base lg:text-lg text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
                 >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

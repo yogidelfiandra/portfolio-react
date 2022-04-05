@@ -50,44 +50,44 @@ export default function Footer() {
             <h5 className='font-semibold text-xl text-white mb-5'>Tautan</h5>
             <ul className='text-slate-300'>
               <li>
-                <Link
-                  to='/beranda'
+                <a
+                  href='#home'
                   className='inline-block text-base hover:text-primary mb-3'
                 >
                   Beranda
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/tentang-saya'
+                <a
+                  href='#about'
                   className='inline-block text-base hover:text-primary mb-3'
                 >
                   Tentang Saya
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/portfolio'
+                <a
+                  href='#portfolio'
                   className='inline-block text-base hover:text-primary mb-3'
                 >
                   Portfolio
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/blog'
+                <a
+                  href='#blog'
                   className='inline-block text-base hover:text-primary mb-3'
                 >
                   Blog
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/contact'
+                <a
+                  href='#contact'
                   className='inline-block text-base hover:text-primary mb-3'
                 >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

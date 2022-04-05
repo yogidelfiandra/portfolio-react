@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { GoArrowUp } from 'react-icons/go';
-// import { BiUpArrow } from 'react-icons/bi';
 import { classNames } from '../../utils';
 
 export const ScrollToTop = () => {

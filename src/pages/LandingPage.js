@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollToTop } from '../components/scroll';
+import useScrollAnchor from '../helpers/hooks/useScrollAnchor';
 import About from '../parts/About';
 import Blog from '../parts/Blog';
 import Clients from '../parts/Clients';
@@ -11,6 +12,7 @@ import Hero from '../parts/Hero';
 import Portfolio from '../parts/Portfolio';
 
 export default function LandingPage() {
+  useScrollAnchor();
   return (
     <>
       <Header />
