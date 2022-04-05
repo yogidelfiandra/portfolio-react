@@ -26,7 +26,7 @@ export default function Header() {
               to='/'
               className='font-bold text-xl lg:text-3xl text-primary block py-6'
             >
-              Yogi Delfiandra
+              yogidelfiandra
             </Link>
           </div>
           <div className='px-4 cursor-pointer lg:hidden' onClick={handleClick}>
