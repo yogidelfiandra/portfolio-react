@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollToTop } from '../components/scroll';
 import About from '../parts/About';
 import Blog from '../parts/Blog';
 import Clients from '../parts/Clients';
@@ -14,12 +15,15 @@ export default function LandingPage() {
     <>
       <Header />
       <Hero />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Clients />
-      <Blog />
-      <Contact />
+      <main>
+        <About />
+        <Experience />
+        <Portfolio />
+        <Clients />
+        <Blog />
+        <Contact />
+        <ScrollToTop />
+      </main>
       <Footer />
     </>
   );
