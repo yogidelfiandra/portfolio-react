@@ -20,12 +20,23 @@ export default function Hero() {
               <span className='text-dark font-bold'>bukan!</span>
             </p>
 
-            <a
-              href='/whatsApp'
-              className='bg-primary text-base px-8 py-3 text-white rounded-full hover:shadow-sm hover:opacity-90 transition duration-300 ease-in-out'
-            >
-              Hubungi Saya
-            </a>
+            <div className='flex space-x-2'>
+              <a
+                href='https://api.whatsapp.com/send?phone=6282382614275&text=hello%20yogi!'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn-primary'
+              >
+                Hubungi Saya
+              </a>
+              <a
+                download=''
+                href='../assets/pdf/CV - Yogi Delfiandra.pdf'
+                className='btn-secondary'
+              >
+                Download CV
+              </a>
+            </div>
           </div>
           <div className='w-full self-end px-4 md:w-1/2'>
             <div className='relative mt-10 md:mt-0 lg:mt-0 lg:right-0'>
