@@ -30,8 +30,9 @@ export default function Hero() {
                 Hubungi Saya
               </a>
               <a
-                download=''
-                href='../assets/pdf/CV - Yogi Delfiandra.pdf'
+                href='https://drive.google.com/file/d/1LFYIeeoKe2SSUk8o-mhoDUKCtiviA06a/view?usp=sharing'
+                target='_blank'
+                rel='noopener noreferrer'
                 className='btn-secondary'
               >
                 Download CV
