@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollToTop } from '../components/scroll';
 import useScrollAnchor from '../helpers/hooks/useScrollAnchor';
+import landingPage from '../json/landingPage.json';
 import About from '../parts/About';
 import Blog from '../parts/Blog';
 import Clients from '../parts/Clients';
@@ -18,11 +19,11 @@ export default function LandingPage() {
       <Header />
       <Hero />
       <main>
-        <About />
+        <About data={landingPage.contacts} />
         <Experience />
-        <Portfolio />
-        <Clients />
-        <Blog />
+        <Portfolio data={landingPage.portfolios} />
+        <Clients data={landingPage.clients} />
+        <Blog data={landingPage.blogs} />
         <Contact />
         <ScrollToTop />
       </main>

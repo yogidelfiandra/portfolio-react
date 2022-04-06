@@ -1,0 +1,98 @@
+{
+  "contacts": [
+    {
+      "title": "github",
+      "linkUrl": "https://github.com/yogidelfiandra",
+      "imageUrl": "/images/icons/github.svg"
+    },
+    {
+      "title": "youtube",
+      "linkUrl": "/youtube",
+      "imageUrl": "/images/icons/youtube.svg"
+    },
+    {
+      "title": "instagram",
+      "linkUrl": "https://www.instagram.com/yogidelfiandra/",
+      "imageUrl": "/images/icons/instagram.svg"
+    },
+    {
+      "title": "twitter",
+      "linkUrl": "https://twitter.com/yogiidelfiandra",
+      "imageUrl": "/images/icons/twitter.svg"
+    },
+    {
+      "title": "linkedin",
+      "linkUrl": "https://www.linkedin.com/in/yogiidelfiandra/",
+      "imageUrl": "/images/icons/linkedin.svg"
+    },
+    {
+      "title": "tiktok",
+      "linkUrl": "/tiktok",
+      "imageUrl": "/images/icons/tiktok.svg"
+    }
+  ],
+  "portfolios": [
+    {
+      "_id": "5a56640269f443a5d64b32ca",
+      "title": "Staycation Web",
+      "imageUrl": "/images/portfolio-1.png",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nemo tempora libero quibusdam?"
+    },
+    {
+      "_id": "5d1b6c8b9f8b8e0f4f8b4b8a",
+      "title": "Luxspace Web",
+      "imageUrl": "/images/portfolio-2.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi a inventore."
+    },
+    {
+      "_id": "5d1b6c8b9f8b8e0f4f8b4b8b",
+      "title": "Marketplace",
+      "imageUrl": "/images/portfolio-3.png",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta assumenda minima aspernatur."
+    },
+    {
+      "_id": "5d1b6c8b9f8b8e0f4f8b4b8c",
+      "title": "Travel Web",
+      "imageUrl": "/images/portfolio-4.png",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi reprehenderit illo et!"
+    }
+  ],
+  "clients": [
+    {
+      "title": "google",
+      "imageUrl": "/images/clients/google.svg"
+    },
+    {
+      "title": "gojek",
+      "imageUrl": "/images/clients/gojek.svg"
+    },
+    {
+      "title": "tokopedia",
+      "imageUrl": "/images/clients/tokopedia.svg"
+    },
+    {
+      "title": "traveloka",
+      "imageUrl": "/images/clients/traveloka.svg"
+    }
+  ],
+  "blogs": [
+    {
+      "_id": "5d1b6c8b9f8b8e0f4f8b4b8d",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Tips Belajar Programming",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, eum."
+    },
+    {
+      "_id": "5d1b6c8b9f8b8e0f4f8b4b8e",
+      "imageUrl": "https://images.unsplash.com/photo-1558050032-8e05d4037d2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Review Keyboard GMMK Pro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo doloribus autem vel!"
+    },
+    {
+      "_id": "5d1b6c8b9f8b8e0f4f8b4b8f",
+      "imageUrl": "https://images.unsplash.com/photo-1518818608552-195ed130cdf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Penulisan syntax code yang benar",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores!"
+    }
+  ]
+}

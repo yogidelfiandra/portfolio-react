@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Portfolio() {
+export default function Portfolio(props) {
   return (
     <section id='portfolio' className='pt-36 pb-16'>
       <div className='container'>
@@ -20,70 +20,25 @@ export default function Portfolio() {
           </div>
         </div>
         <div className='w-full px-4 flex flex-wrap justify-center'>
-          <div className='mb-12 md:px-3 md:w-1/2 lg:w-1/4'>
-            <div className='rounded-md shadow-md overflow-hidden'>
-              <img
-                src='images/portfolio-1.png'
-                alt='staycation'
-                className='w-full'
-              />
-            </div>
-            <h5 className='font-semibold text-xl text-dark mt-5 mb-3'>
-              Staycation Web
-            </h5>
-            <p className='font-medium text-base text-secondary'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, placeat?
-            </p>
-          </div>
-          <div className='mb-12 md:px-3 md:w-1/2 lg:w-1/4'>
-            <div className='rounded-md shadow-md overflow-hidden'>
-              <img
-                src='images/portfolio-2.png'
-                alt='luxspace'
-                className='w-full'
-              />
-            </div>
-            <h5 className='font-semibold text-xl text-dark mt-5 mb-3'>
-              Luxspace Web
-            </h5>
-            <p className='font-medium text-base text-secondary'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, placeat?
-            </p>
-          </div>
-          <div className='mb-12 md:px-3 md:w-1/2 lg:w-1/4'>
-            <div className='rounded-md shadow-md overflow-hidden'>
-              <img
-                src='images/portfolio-3.png'
-                alt='marketplace'
-                className='w-full'
-              />
-            </div>
-            <h5 className='font-semibold text-xl text-dark mt-5 mb-3'>
-              Marketplace
-            </h5>
-            <p className='font-medium text-base text-secondary'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, placeat?
-            </p>
-          </div>
-          <div className='mb-12 md:px-3 md:w-1/2 lg:w-1/4'>
-            <div className='rounded-md shadow-md overflow-hidden'>
-              <img
-                src='images/portfolio-4.png'
-                alt='travel'
-                className='w-full'
-              />
-            </div>
-            <h5 className='font-semibold text-xl text-dark mt-5 mb-3'>
-              Travel Web
-            </h5>
-            <p className='font-medium text-base text-secondary'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, placeat?
-            </p>
-          </div>
+          {props.data.map((item, index) => {
+            return (
+              <div key={item._id} className='mb-12 md:px-3 md:w-1/2 lg:w-1/4'>
+                <div className='rounded-md shadow-md overflow-hidden'>
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className='w-full'
+                  />
+                </div>
+                <h5 className='font-semibold text-xl text-dark mt-5 mb-3'>
+                  {item.title}
+                </h5>
+                <p className='font-medium text-base text-secondary'>
+                  {item.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

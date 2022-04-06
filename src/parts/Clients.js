@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Clients() {
+export default function Clients(props) {
   return (
     <section id='clients' className='pt-36 pb-32 bg-slate-800'>
       <div className='container'>
@@ -20,30 +20,17 @@ export default function Clients() {
 
         <div className='w-full px-4'>
           <div className='flex flex-wrap items-center justify-center'>
-            <Link
-              to='#'
-              className='max-w-[7.5rem] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8'
-            >
-              <img src='images/clients/google.svg' alt='google' />
-            </Link>
-            <Link
-              to='#'
-              className='max-w-[7.5rem] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8'
-            >
-              <img src='images/clients/gojek.svg' alt='gojek' />
-            </Link>
-            <Link
-              to='#'
-              className='max-w-[7.5rem] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8'
-            >
-              <img src='images/clients/tokopedia.svg' alt='tokopedia' />
-            </Link>
-            <Link
-              to='#'
-              className='max-w-[7.5rem] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8'
-            >
-              <img src='images/clients/traveloka.svg' alt='traveloka' />
-            </Link>
+            {props.data.map((item, index) => {
+              return (
+                <Link
+                  key={index + 1}
+                  to='#'
+                  className='max-w-[7.5rem] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8'
+                >
+                  <img src={item.imageUrl} alt={item.title} />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
