@@ -20,7 +20,7 @@ export default function LandingPage() {
       <Hero />
       <main>
         <About data={landingPage.contacts} />
-        <Experience />
+        <Experience data={landingPage.skills} />
         <Portfolio data={landingPage.portfolios} />
         <Clients data={landingPage.clients} />
         <Blog data={landingPage.blogs} />

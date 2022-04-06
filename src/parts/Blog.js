@@ -21,7 +21,7 @@ export default function Blog(props) {
         <div className='flex flex-wrap'>
           {props.data.map((item, index) => {
             return (
-              <div key={item._id} className='w-full px-4 lg:w-1/2 xl:w-1/3'>
+              <div key={item._id} className='w-full px-4 sm:w-1/2 lg:w-1/3'>
                 <div className='bg-white rounded-xl shadow-lg overflow-hidden mb-10'>
                   <img
                     src={item.imageUrl}

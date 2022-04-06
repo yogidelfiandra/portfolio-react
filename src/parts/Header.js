@@ -30,13 +30,17 @@ export default function Header() {
             </Link>
           </div>
           <div className='px-4 cursor-pointer lg:hidden' onClick={handleClick}>
-            {click ? <FaTimes size={20} /> : <FaBars size={20} />}
+            {click ? (
+              <FaTimes size={20} style={{ color: 'red' }} />
+            ) : (
+              <FaBars size={20} style={{ color: '#10b981' }} />
+            )}
           </div>
           <nav
             className={[
               'nav-menu lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none',
               click
-                ? 'absolute py-5 bg-white shadow-lg rounded-lg max-w-[15.625rem] w-full right-4 top-full'
+                ? 'absolute py-5 bg-white shadow-lg rounded-b-lg max-w-[15.625rem] w-full right-4 top-full'
                 : 'hidden',
             ].join(' ')}
           >

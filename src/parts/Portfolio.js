@@ -22,14 +22,21 @@ export default function Portfolio(props) {
         <div className='w-full px-4 flex flex-wrap justify-center'>
           {props.data.map((item, index) => {
             return (
-              <div key={item._id} className='mb-12 md:px-3 md:w-1/2 lg:w-1/4'>
-                <div className='rounded-md shadow-md overflow-hidden'>
-                  <img
-                    src={item.imageUrl}
-                    alt={item.title}
-                    className='w-full'
-                  />
-                </div>
+              <div key={item._id} className='mb-12 sm:px-3 sm:w-1/2 lg:w-1/4'>
+                <a
+                  href='/link-website'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className=''
+                >
+                  <div className='rounded-md shadow-md overflow-hidden'>
+                    <img
+                      src={item.imageUrl}
+                      alt={item.title}
+                      className='w-full'
+                    />
+                  </div>
+                </a>
                 <h5 className='font-semibold text-xl text-dark mt-5 mb-3'>
                   {item.title}
                 </h5>

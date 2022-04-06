@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsPatchCheckFill } from 'react-icons/bs';
 
-export default function Experience() {
+export default function Experience(props) {
   return (
     <section id='experience' className='pt-36 pb-32 bg-slate-100'>
       <div className='container'>
@@ -19,180 +19,45 @@ export default function Experience() {
         </div>
 
         <div className='flex flex-wrap justify-center'>
-          {/* frontend development */}
-          <div className='mb-12 w-full mx-auto md:w-[600px] lg:w-1/2 lg:mb-0 lg:px-4'>
-            <div className='bg-slate-800 hover:bg-slate-700 transition duration-500 py-4 text-white rounded-xl shadow-sm text-center '>
-              <h5 className='font-bold text-lg xl:text-xl py-6 mb-5 xl:mb-10'>
-                Frontend Development
-              </h5>
+          {props.data.map((item, index1) => {
+            return (
+              <div
+                key={index1}
+                className='mb-12 w-full mx-auto sm:w-[500px] md:w-[600px] lg:w-1/2 lg:mb-0 lg:px-4'
+              >
+                <div className='bg-slate-800 hover:bg-slate-700 transition duration-500 py-4 text-white rounded-xl shadow-sm text-center '>
+                  <h5 className='font-bold text-lg xl:text-xl py-6 mb-5  xl:mb-10'>
+                    {item.title}
+                  </h5>
 
-              <div className='w-full flex flex-wrap px-5 md:px-10'>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      HTML
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>
-                      Experienced
-                    </p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      CSS
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>
-                      Intermediate
-                    </p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      JavaScript
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>Basic</p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      Bootstrap
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>
-                      Intermediate
-                    </p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      Tailwind
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>
-                      Intermediate
-                    </p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      React JS
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>Basic</p>
+                  <div className='w-full flex flex-wrap px-5 sm:px-10 md:px-10'>
+                    {item.features.map((feature, index2) => {
+                      return (
+                        <div
+                          key={`skills-${index1}-feature-${index2}`}
+                          className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '
+                        >
+                          <BsPatchCheckFill
+                            size={16}
+                            color={'#10b981'}
+                            style={{ marginTop: 3 }}
+                          />
+                          <div className='pl-4 text-left'>
+                            <h6 className='font-bold text-sm md:text-base xl:text-[17px]'>
+                              {feature.name}
+                            </h6>
+                            <p className='text-xs md:text-sm xl:text-[15px]'>
+                              {feature.level}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* backend development */}
-          <div className='mb-12 w-full mx-auto md:w-[600px] lg:w-1/2 lg:mb-0 lg:px-4'>
-            <div className='bg-slate-800 hover:bg-slate-700 transition duration-500 py-4 text-white rounded-xl shadow-sm text-center '>
-              <h5 className='font-bold text-lg xl:text-xl py-6 mb-5 xl:mb-10'>
-                Backend Development
-              </h5>
-
-              <div className='w-full flex flex-wrap px-5 md:px-10'>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      Node JS
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>Basic</p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      MongoDB
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>Basic</p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      PHP
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>Basic</p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      MySQL
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>Basic</p>
-                  </div>
-                </div>
-                <div className='mb-12 w-1/2 px-6 md:mb-10 md:px-16 lg:px-10 xl:px-16 flex items-center '>
-                  <BsPatchCheckFill
-                    size={16}
-                    color={'#10b981'}
-                    style={{ marginTop: 3 }}
-                  />
-                  <div className='pl-4 text-left'>
-                    <h6 className='font-bold text-sm md:text-base xl:text-lg'>
-                      Laravel
-                    </h6>
-                    <p className='text-xs md:text-sm xl:text-base'>Basic</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -31,6 +31,62 @@
       "imageUrl": "/images/icons/tiktok.svg"
     }
   ],
+  "skills": [
+    {
+      "title": "Frontend Development",
+      "features": [
+        {
+          "name": "HTML",
+          "level": "Experienced"
+        },
+        {
+          "name": "CSS",
+          "level": "Intermediate"
+        },
+        {
+          "name": "JavaScript",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Bootstrap",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Tailwind",
+          "level": "Intermediate"
+        },
+        {
+          "name": "React JS",
+          "level": "Intermdiate"
+        }
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "features": [
+        {
+          "name": "Node JS",
+          "level": "Basic"
+        },
+        {
+          "name": "MongoDB",
+          "level": "Basic"
+        },
+        {
+          "name": "PHP",
+          "level": "Basic"
+        },
+        {
+          "name": "MySQL",
+          "level": "Basic"
+        },
+        {
+          "name": "Laravel",
+          "level": "Basic"
+        }
+      ]
+    }
+  ],
   "portfolios": [
     {
       "_id": "5a56640269f443a5d64b32ca",
