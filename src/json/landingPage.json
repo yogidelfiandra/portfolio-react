@@ -6,29 +6,14 @@
       "imageUrl": "/images/icons/github.svg"
     },
     {
-      "title": "youtube",
-      "linkUrl": "/youtube",
-      "imageUrl": "/images/icons/youtube.svg"
-    },
-    {
       "title": "instagram",
       "linkUrl": "https://www.instagram.com/yogidelfiandra/",
       "imageUrl": "/images/icons/instagram.svg"
     },
     {
-      "title": "twitter",
-      "linkUrl": "https://twitter.com/yogiidelfiandra",
-      "imageUrl": "/images/icons/twitter.svg"
-    },
-    {
       "title": "linkedin",
       "linkUrl": "https://www.linkedin.com/in/yogiidelfiandra/",
       "imageUrl": "/images/icons/linkedin.svg"
-    },
-    {
-      "title": "tiktok",
-      "linkUrl": "/tiktok",
-      "imageUrl": "/images/icons/tiktok.svg"
     }
   ],
   "skills": [
@@ -92,24 +77,28 @@
       "_id": "5a56640269f443a5d64b32ca",
       "title": "Staycation Web",
       "imageUrl": "/images/portfolio-1.png",
+      "linkUrl": "https://web-staycation.vercel.app/",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nemo tempora libero quibusdam?"
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8a",
       "title": "Luxspace Web",
       "imageUrl": "/images/portfolio-2.png",
+      "linkUrl": "https://web-luxspace.netlify.app/",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi a inventore."
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8b",
       "title": "Marketplace",
       "imageUrl": "/images/portfolio-3.png",
+      "linkUrl": "/link-website",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta assumenda minima aspernatur."
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8c",
       "title": "Travel Web",
       "imageUrl": "/images/portfolio-4.png",
+      "linkUrl": "https://web-nomads.netlify.app/",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi reprehenderit illo et!"
     }
   ],

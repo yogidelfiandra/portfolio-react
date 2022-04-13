@@ -1,4 +1,10 @@
 import React from 'react';
+// import required modules
+import { Autoplay, Pagination } from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Portfolio(props) {
   return (
@@ -19,12 +25,29 @@ export default function Portfolio(props) {
             </p>
           </div>
         </div>
-        <div className='w-full px-4 flex flex-wrap justify-center'>
+        <Swiper
+          className='swiper-autoplay'
+          slidesPerView={1}
+          spaceBetween={30}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          modules={[Autoplay, Pagination]}
+        >
           {props.data.map((item, index) => {
             return (
-              <div key={item._id} className='mb-12 sm:px-3 sm:w-1/2 lg:w-1/4'>
+              <SwiperSlide key={item._id} className=''>
                 <a
-                  href='/link-website'
+                  href={item.linkUrl}
                   target='_blank'
                   rel='noopener noreferrer'
                   className=''
@@ -43,10 +66,10 @@ export default function Portfolio(props) {
                 <p className='font-medium text-base text-secondary'>
                   {item.description}
                 </p>
-              </div>
+              </SwiperSlide>
             );
           })}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
