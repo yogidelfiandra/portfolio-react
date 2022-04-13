@@ -19,9 +19,7 @@ export default function Portfolio(props) {
               Project Terbaru
             </h4>
             <p className='font-medium text-base text- text-secondary md:text-lg'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed
-              ex soluta voluptate, veritatis reiciendis culpa eos debitis
-              consectetur ullam.
+              Beberapa karya terbaik saya
             </p>
           </div>
         </div>

@@ -9,11 +9,11 @@ export default function Experience(props) {
           <div className='max-w-xl mx-auto text-center mb-16'>
             <h3 className='font-semibold text-lg text-primary mb-2'>Skills</h3>
             <h4 className='font-bold text-dark text-3xl sm:text-4xl lg:text-5xl mb-4'>
-              Pengalaman <br className='sm:hidden' /> Tech Stack
+              Keterampilan Teknis
             </h4>
             <p className='font-medium text-base text- text-secondary md:text-lg'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              libero id enim repellat suscipit.
+              Kumpulan teknologi yang saya gunakan <br className='' /> untuk
+              membangun sebuah aplikasi web
             </p>
           </div>
         </div>

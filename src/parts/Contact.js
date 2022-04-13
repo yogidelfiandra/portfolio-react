@@ -39,10 +39,10 @@ export default function Contact() {
             <h4 className='font-bold text-dark text-3xl sm:text-4xl lg:text-5xl mb-4'>
               Hubungi Kami
             </h4>
-            <p className='font-medium text-base text- text-secondary md:text-lg'>
+            {/* <p className='font-medium text-base text- text-secondary md:text-lg'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus nisi nihil perspiciatis saepe!
-            </p>
+            </p> */}
           </div>
         </div>
 

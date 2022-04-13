@@ -18,8 +18,8 @@ export default function Blog(props) {
               Tulisan Terkini
             </h4>
             <p className='font-medium text-base text- text-secondary md:text-lg'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
-              doloremque! Magni, ea deserunt!
+              Berbagi cerita melalui sebuah tulisan terkait{' '}
+              <br className='hidden lg:block' /> web developer dan sebagainya
             </p>
           </div>
         </div>

@@ -4,7 +4,7 @@ import useScrollAnchor from '../helpers/hooks/useScrollAnchor';
 import landingPage from '../json/landingPage.json';
 import About from '../parts/About';
 import Blog from '../parts/Blog';
-import Clients from '../parts/Clients';
+// import Clients from '../parts/Clients';
 import Contact from '../parts/Contact';
 import Experience from '../parts/Experience';
 import Footer from '../parts/Footer';
@@ -22,7 +22,7 @@ export default function LandingPage() {
         <About data={landingPage.contacts} />
         <Experience data={landingPage.skills} />
         <Portfolio data={landingPage.portfolios} />
-        <Clients data={landingPage.clients} />
+        {/* <Clients data={landingPage.clients} /> */}
         <Blog data={landingPage.blogs} />
         <Contact />
         <ScrollToTop />

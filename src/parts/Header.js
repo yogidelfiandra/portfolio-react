@@ -24,9 +24,9 @@ export default function Header() {
           <div className='px-4'>
             <Link
               to='/'
-              className='font-bold text-xl lg:text-3xl text-primary block py-6'
+              className='font-bold text-xl lg:text-3xl text-primary block py-5'
             >
-              yogidelfiandra
+              <img src='images/logo.png' alt='' className='w-16' />
             </Link>
           </div>
           <div className='px-4 cursor-pointer lg:hidden' onClick={handleClick}>

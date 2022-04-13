@@ -16,8 +16,8 @@ export default function Hero() {
               Web Developer & <span className='text-dark'>Content Creator</span>
             </h2>
             <p className='font-medium text-secondary mb-10 leading-relaxed'>
-              Belajar Web Programming itu menyenangkan bukan.{' '}
-              <span className='text-dark font-bold'>bukan!</span>
+              Pengalaman tingkat tinggi dalam pengembang web,{' '}
+              <br className='' /> menghasilkan pekerjaan yang berkualitas
             </p>
 
             <div className='flex space-x-2'>
