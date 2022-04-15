@@ -9,15 +9,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Blog(props) {
   return (
-    <section id='blog' className='pt-36 pb-32 bg-slate-100'>
+    <section id='blog' className='bg-slate-100 pt-36 pb-32'>
       <div className='container'>
         <div className='w-full px-4'>
-          <div className='max-w-xl mx-auto text-center mb-16'>
-            <h3 className='font-semibold text-lg text-primary mb-2'>Blog</h3>
-            <h4 className='font-bold text-dark text-3xl sm:text-4xl lg:text-5xl mb-4'>
+          <div className='mx-auto mb-16 max-w-xl text-center'>
+            <h3 className='mb-2 text-lg font-semibold text-primary'>Blog</h3>
+            <h4 className='mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl'>
               Tulisan Terkini
             </h4>
-            <p className='font-medium text-base text- text-secondary md:text-lg'>
+            <p className='text- text-base font-medium text-secondary md:text-lg'>
               Berbagi cerita melalui sebuah tulisan terkait{' '}
               <br className='hidden lg:block' /> web developer dan sebagainya
             </p>
@@ -45,7 +45,7 @@ export default function Blog(props) {
           {props.data.map((item, index) => {
             return (
               <SwiperSlide key={item._id} className=''>
-                <div className='bg-white rounded-xl shadow-lg overflow-hidden mb-10'>
+                <div className='mb-10 overflow-hidden rounded-xl bg-white shadow-lg'>
                   <img
                     src={item.imageUrl}
                     alt={item.title}
@@ -55,17 +55,17 @@ export default function Blog(props) {
                     <h5>
                       <Link
                         to={`/blog/${item._id}/detail`}
-                        className='block mb-3 font-semibold text-lg xl:text-xl text-dark hover:text-primary truncate'
+                        className='mb-3 block truncate text-lg font-semibold text-dark hover:text-primary xl:text-xl'
                       >
                         {item.title}
                       </Link>
                     </h5>
-                    <p className='font-medium text-base text-secondary mb-6'>
+                    <p className='mb-6 text-base font-medium text-secondary'>
                       {item.description}
                     </p>
                     <Link
                       to={`/blog/${item._id}/detail`}
-                      className='font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80'
+                      className='rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80'
                     >
                       Baca Selengkapnya
                     </Link>

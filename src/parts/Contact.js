@@ -34,9 +34,9 @@ export default function Contact() {
     <section id='contact' className='pt-36 pb-32'>
       <div className='container'>
         <div className='w-full px-4'>
-          <div className='max-w-xl mx-auto text-center mb-16'>
-            <h3 className='font-semibold text-lg text-primary mb-2'>Contact</h3>
-            <h4 className='font-bold text-dark text-3xl sm:text-4xl lg:text-5xl mb-4'>
+          <div className='mx-auto mb-16 max-w-xl text-center'>
+            <h3 className='mb-2 text-lg font-semibold text-primary'>Contact</h3>
+            <h4 className='mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl'>
               Hubungi Kami
             </h4>
             {/* <p className='font-medium text-base text- text-secondary md:text-lg'>
@@ -47,8 +47,8 @@ export default function Contact() {
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <div className='w-full lg:w-2/3 lg:mx-auto'>
-            <div className='w-full px-4 mb-8'>
+          <div className='w-full lg:mx-auto lg:w-2/3'>
+            <div className='mb-8 w-full px-4'>
               <label
                 htmlFor='nama'
                 className='text-base font-bold text-primary'
@@ -59,11 +59,11 @@ export default function Contact() {
                 type='text'
                 id='nama'
                 name='nama'
-                className='w-full bg-slate-200 text-dark mt-2 p-3 rounded-md caret-primary focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary'
+                className='mt-2 w-full rounded-md bg-slate-200 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
                 required
               />
             </div>
-            <div className='w-full px-4 mb-8'>
+            <div className='mb-8 w-full px-4'>
               <label
                 htmlFor='email'
                 className='text-base font-bold text-primary'
@@ -74,11 +74,11 @@ export default function Contact() {
                 type='email'
                 id='email'
                 name='email'
-                className='w-full bg-slate-200 text-dark mt-2 p-3 rounded-md caret-primary focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary'
+                className='mt-2 w-full rounded-md bg-slate-200 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
                 required
               />
             </div>
-            <div className='w-full px-4 mb-8'>
+            <div className='mb-8 w-full px-4'>
               <label
                 htmlFor='pesan'
                 className='text-base font-bold text-primary'
@@ -89,12 +89,12 @@ export default function Contact() {
                 type='text'
                 id='pesan'
                 name='pesan'
-                className='w-full bg-slate-200 text-dark mt-2 p-3 rounded-md caret-primary focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-36'
+                className='mt-2 h-36 w-full rounded-md bg-slate-200 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
                 required
               ></textarea>
             </div>
             <div className='w-full px-4'>
-              <button className='text-base font-semibold text-white bg-primary py-3 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500'>
+              <button className='w-full rounded-full bg-primary py-3 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg'>
                 Kirim
               </button>
             </div>

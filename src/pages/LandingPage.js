@@ -14,6 +14,7 @@ import Portfolio from '../parts/Portfolio';
 
 export default function LandingPage() {
   useScrollAnchor();
+
   return (
     <>
       <Header />

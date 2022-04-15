@@ -11,14 +11,14 @@ export default function Portfolio(props) {
     <section id='portfolio' className='pt-36 pb-16'>
       <div className='container'>
         <div className='w-full px-4'>
-          <div className='max-w-xl mx-auto text-center mb-16'>
-            <h3 className='font-semibold text-lg text-primary mb-2'>
+          <div className='mx-auto mb-16 max-w-xl text-center'>
+            <h3 className='mb-2 text-lg font-semibold text-primary'>
               Portfolio
             </h3>
-            <h4 className='font-bold text-dark text-3xl sm:text-4xl lg:text-5xl mb-4'>
+            <h4 className='mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl'>
               Project Terbaru
             </h4>
-            <p className='font-medium text-base text- text-secondary md:text-lg'>
+            <p className='text- text-base font-medium text-secondary md:text-lg'>
               Beberapa karya terbaik saya
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function Portfolio(props) {
                   rel='noopener noreferrer'
                   className=''
                 >
-                  <div className='rounded-md shadow-md overflow-hidden'>
+                  <div className='overflow-hidden rounded-md shadow-md'>
                     <img
                       src={item.imageUrl}
                       alt={item.title}
@@ -58,10 +58,10 @@ export default function Portfolio(props) {
                     />
                   </div>
                 </a>
-                <h5 className='font-semibold text-xl text-dark mt-5 mb-3'>
+                <h5 className='mt-5 mb-3 text-xl font-semibold text-dark'>
                   {item.title}
                 </h5>
-                <p className='font-medium text-base text-secondary'>
+                <p className='text-base font-medium text-secondary'>
                   {item.description}
                 </p>
               </SwiperSlide>

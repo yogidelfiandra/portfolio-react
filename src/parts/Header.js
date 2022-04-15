@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
+import { RiMenu4Fill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -18,37 +19,43 @@ export default function Header() {
   };
 
   return (
-    <header className='bg-transparent absolute top-0 left-0 w-full flex items-center z-10'>
+    <header className='absolute top-0 left-0 z-10 flex w-full items-center bg-transparent'>
       <div className='container'>
-        <div className='flex items-center justify-between relative'>
+        <div className='relative flex items-center justify-between'>
           <div className='px-4'>
             <Link
               to='/'
-              className='font-bold text-xl lg:text-3xl text-primary block py-5'
+              className='block py-5 text-xl font-bold text-primary lg:text-3xl'
             >
-              <img src='images/logo.png' alt='' className='w-16' />
+              <img src='images/logo.png' alt='' className='w-10' />
             </Link>
           </div>
-          <div className='px-4 cursor-pointer lg:hidden' onClick={handleClick}>
-            {click ? (
-              <FaTimes size={20} style={{ color: 'red' }} />
-            ) : (
-              <FaBars size={20} style={{ color: '#10b981' }} />
-            )}
+          <div className='px-4'>
+            <div
+              className='cursor-pointer rounded-md bg-primary px-2 py-2 lg:hidden'
+              onClick={handleClick}
+            >
+              {click ? (
+                <FaTimes size={20} style={{ color: 'white' }} />
+              ) : (
+                <RiMenu4Fill size={20} style={{ color: 'white' }} />
+              )}
+            </div>
           </div>
           <nav
             className={[
-              'nav-menu lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none',
+              'nav-menu lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none',
               click
-                ? 'absolute py-5 bg-white shadow-lg rounded-b-lg max-w-[15.625rem] w-full right-4 top-full'
+                ? 'absolute right-4 top-full w-full max-w-[15.625rem] rounded-b-lg bg-white py-5 shadow-lg'
                 : 'hidden',
             ].join(' ')}
           >
-            <ul className='block lg:flex'>
+            {/* Desktop View */}
+            <ul className='hidden lg:flex'>
               <li className='group'>
                 <a
                   href='#home'
-                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
                 >
                   Beranda
                 </a>
@@ -56,7 +63,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#about'
-                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
                 >
                   Tentang Saya
                 </a>
@@ -64,7 +71,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#portfolio'
-                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
                 >
                   Portfolio
                 </a>
@@ -72,7 +79,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#clients'
-                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
                 >
                   Clients
                 </a>
@@ -80,7 +87,7 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#blog'
-                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
                 >
                   Blog
                 </a>
@@ -88,7 +95,59 @@ export default function Header() {
               <li className='group'>
                 <a
                   href='#contact'
-                  className='text-base text-dark py-2 mx-8 lg:mx-5 xl:mx-7 flex group-hover:text-primary'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+            {/* Mobile view */}
+            <ul className='block lg:hidden'>
+              <li className='group' onClick={handleClick}>
+                <a
+                  href='#home'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
+                >
+                  Beranda
+                </a>
+              </li>
+              <li className='group' onClick={handleClick}>
+                <a
+                  href='#about'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
+                >
+                  Tentang Saya
+                </a>
+              </li>
+              <li className='group' onClick={handleClick}>
+                <a
+                  href='#portfolio'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li className='group' onClick={handleClick}>
+                <a
+                  href='#clients'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
+                >
+                  Clients
+                </a>
+              </li>
+              <li className='group' onClick={handleClick}>
+                <a
+                  href='#blog'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
+                >
+                  Blog
+                </a>
+              </li>
+              <li className='group' onClick={handleClick}>
+                <a
+                  href='#contact'
+                  className='mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mx-5 xl:mx-7'
                 >
                   Contact
                 </a>
