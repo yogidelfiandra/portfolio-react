@@ -9,12 +9,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Blog(props) {
   return (
-    <section id='blog' className='bg-slate-100 pt-36 pb-32'>
+    <section id='blog' className='bg-slate-100 pt-36 pb-32 dark:bg-slate-700'>
       <div className='container'>
         <div className='w-full px-4'>
           <div className='mx-auto mb-16 max-w-xl text-center'>
             <h3 className='mb-2 text-lg font-semibold text-primary'>Blog</h3>
-            <h4 className='mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl'>
+            <h4 className='mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl'>
               Tulisan Terkini
             </h4>
             <p className='text- text-base font-medium text-secondary md:text-lg'>
@@ -45,7 +45,7 @@ export default function Blog(props) {
           {props.data.map((item, index) => {
             return (
               <SwiperSlide key={item._id} className=''>
-                <div className='mb-10 overflow-hidden rounded-xl bg-white shadow-lg'>
+                <div className='mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-dark'>
                   <img
                     src={item.imageUrl}
                     alt={item.title}
@@ -55,7 +55,7 @@ export default function Blog(props) {
                     <h5>
                       <Link
                         to={`/blog/${item._id}/detail`}
-                        className='mb-3 block truncate text-lg font-semibold text-dark hover:text-primary xl:text-xl'
+                        className='mb-3 block truncate text-lg font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary xl:text-xl'
                       >
                         {item.title}
                       </Link>

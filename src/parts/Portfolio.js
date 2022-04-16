@@ -8,14 +8,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Portfolio(props) {
   return (
-    <section id='portfolio' className='pt-36 pb-16'>
+    <section id='portfolio' className='pt-36 pb-16 dark:bg-dark'>
       <div className='container'>
         <div className='w-full px-4'>
           <div className='mx-auto mb-16 max-w-xl text-center'>
             <h3 className='mb-2 text-lg font-semibold text-primary'>
               Portfolio
             </h3>
-            <h4 className='mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl'>
+            <h4 className='mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl'>
               Project Terbaru
             </h4>
             <p className='text- text-base font-medium text-secondary md:text-lg'>
@@ -58,7 +58,7 @@ export default function Portfolio(props) {
                     />
                   </div>
                 </a>
-                <h5 className='mt-5 mb-3 text-xl font-semibold text-dark'>
+                <h5 className='mt-5 mb-3 text-xl font-semibold text-dark dark:text-white'>
                   {item.title}
                 </h5>
                 <p className='text-base font-medium text-secondary'>

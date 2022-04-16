@@ -7,7 +7,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[999] bg-white shadow-md;
+  @apply fixed z-[999] bg-white shadow-md dark:shadow-slate-800;
 }
 
 .btn-primary {

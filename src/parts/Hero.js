@@ -2,18 +2,19 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section id='home' className='pt-36'>
+    <section id='home' className='pt-36 dark:bg-dark'>
       <div className='container'>
         <div className='flex flex-wrap'>
           <div className='w-full self-center px-4 md:w-1/2'>
             <h1 className='text-base font-semibold text-primary md:text-xl'>
               Halo semua 👋, saya{' '}
-              <span className='mt-1 mb-1.5 block text-4xl font-bold text-dark lg:text-5xl'>
+              <span className='mt-1 mb-1.5 block text-4xl font-bold text-dark dark:text-white lg:text-5xl'>
                 Yogi Delfiandra
               </span>
             </h1>
             <h2 className='mb-5 text-lg font-medium text-secondary lg:text-2xl'>
-              Web Developer & <span className='text-dark'>Content Creator</span>
+              Web Developer &{' '}
+              <span className='text-dark dark:text-white'>Content Creator</span>
             </h2>
             <p className='mb-10 font-medium leading-relaxed text-secondary'>
               Pengalaman tingkat tinggi dalam pengembang web,{' '}

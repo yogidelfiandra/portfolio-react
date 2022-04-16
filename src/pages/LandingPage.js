@@ -19,7 +19,7 @@ export default function LandingPage() {
     <>
       <Header />
       <Hero />
-      <main>
+      <main className='dark:bg-black'>
         <About data={landingPage.contacts} />
         <Experience data={landingPage.skills} />
         <Portfolio data={landingPage.portfolios} />
