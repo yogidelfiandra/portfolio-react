@@ -5,6 +5,7 @@ import landingPage from '../json/landingPage.json';
 import About from '../parts/About';
 // import Clients from '../parts/Clients';
 import Blog from '../parts/Blog';
+import Contact from '../parts/Contact';
 import Experience from '../parts/Experience';
 import Header from '../parts/Header';
 import Hero from '../parts/Hero';
@@ -23,7 +24,7 @@ export default function LandingPage() {
         <Portfolio data={landingPage.portfolios} />
         {/* <Clients data={landingPage.clients} /> */}
         <Blog data={landingPage.blogs} />
-        {/* <Contact /> */}
+        <Contact />
         <ScrollToTop />
       </main>
       {/* <Footer /> */}

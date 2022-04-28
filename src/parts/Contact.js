@@ -31,43 +31,32 @@ export default function Contact() {
   };
 
   return (
-    <section id='contact' className='pt-36 pb-32 dark:bg-dark'>
+    <section id='contact' className='contact-section'>
       <div className='container'>
-        <div className='w-full px-4'>
+        <div className='w-full sm:px-4'>
           <div className='mx-auto mb-16 max-w-xl text-center'>
-            <h3 className='mb-2 text-lg font-semibold text-primary'>Contact</h3>
-            <h4 className='mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl'>
-              Hubungi Kami
-            </h4>
-            {/* <p className='font-medium text-base text- text-secondary md:text-lg'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusamus nisi nihil perspiciatis saepe!
-            </p> */}
+            <h3 className='sub-title mb-2'>Contact</h3>
+            <h4 className='title lg:text-4xl'>Contact Me</h4>
+            <p className='paragraph'>Get in touch</p>
           </div>
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <div className='w-full lg:mx-auto lg:w-2/3'>
-            <div className='mb-8 w-full px-4'>
-              <label
-                htmlFor='nama'
-                className='text-base font-bold text-primary'
-              >
-                Nama
+          <div className='w-full lg:mx-auto lg:w-1/2'>
+            <div className='input-group'>
+              <label htmlFor='name' className='sub-title'>
+                Name
               </label>
               <input
                 type='text'
-                id='nama'
-                name='nama'
+                id='name'
+                name='name'
                 className='mt-2 w-full rounded-md bg-slate-100 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
                 required
               />
             </div>
-            <div className='mb-8 w-full px-4'>
-              <label
-                htmlFor='email'
-                className='text-base font-bold text-primary'
-              >
+            <div className='input-group'>
+              <label htmlFor='email' className='sub-title'>
                 Email
               </label>
               <input
@@ -78,24 +67,33 @@ export default function Contact() {
                 required
               />
             </div>
-            <div className='mb-8 w-full px-4'>
-              <label
-                htmlFor='pesan'
-                className='text-base font-bold text-primary'
-              >
-                Pesan
+            <div className='input-group'>
+              <label htmlFor='subject' className='sub-title'>
+                Subject
+              </label>
+              <input
+                type='text'
+                id='subject'
+                name='subject'
+                className='mt-2 w-full rounded-md bg-slate-100 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
+                required
+              />
+            </div>
+            <div className='input-group'>
+              <label htmlFor='message' className='sub-title'>
+                Message
               </label>
               <textarea
                 type='text'
-                id='pesan'
-                name='pesan'
+                id='message'
+                name='message'
                 className='mt-2 h-36 w-full rounded-md bg-slate-100 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
                 required
               ></textarea>
             </div>
-            <div className='w-full px-4'>
+            <div className='input-group'>
               <button className='w-full rounded-full bg-primary py-3 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg'>
-                Kirim
+                Send
               </button>
             </div>
           </div>
