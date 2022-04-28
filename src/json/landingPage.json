@@ -78,28 +78,35 @@
       "title": "Staycation Web",
       "imageUrl": "/images/portfolio-1.png",
       "linkUrl": "https://web-staycation.vercel.app/",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nemo tempora libero quibusdam?"
+      "description": "Website with UI components and animated interactions that adapts to all devices."
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8a",
       "title": "Luxspace Web",
       "imageUrl": "/images/portfolio-2.png",
       "linkUrl": "https://web-luxspace.netlify.app/",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi a inventore."
+      "description": "Website with UI components and animated interactions that adapts to all devices."
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8b",
       "title": "Marketplace",
       "imageUrl": "/images/portfolio-3.png",
       "linkUrl": "/link-website",
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta assumenda minima aspernatur."
+      "description": "Website with UI components and animated interactions that adapts to all devices."
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8c",
       "title": "Travel Web",
       "imageUrl": "/images/portfolio-4.png",
       "linkUrl": "https://web-nomads.netlify.app/",
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi reprehenderit illo et!"
+      "description": "Website with UI components and animated interactions that adapts to all devices."
+    },
+    {
+      "_id": "5d1b6c8b9f8b8e0f4f8b4b8d",
+      "title": "Laracamp",
+      "imageUrl": "/images/portfolio-5.png",
+      "linkUrl": "https://web-laracamp.netlify.app/",
+      "description": "Website with UI components and animated interactions that adapts to all devices."
     }
   ],
   "clients": [

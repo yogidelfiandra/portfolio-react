@@ -10,24 +10,18 @@ export default function Portfolio(props) {
   return (
     <section id='portfolio' className='pt-36 pb-16 dark:bg-dark'>
       <div className='container'>
-        <div className='w-full px-4'>
+        <div className='w-full sm:px-4'>
           <div className='mx-auto mb-16 max-w-xl text-center'>
-            <h3 className='mb-2 text-lg font-semibold text-primary'>
-              Portfolio
-            </h3>
-            <h4 className='mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl'>
-              Project Terbaru
-            </h4>
-            <p className='text- text-base font-medium text-secondary md:text-lg'>
-              Beberapa karya terbaik saya
-            </p>
+            <h3 className='sub-title mb-2'>Portfolio</h3>
+            <h4 className='title lg:text-5xl'>My Projects</h4>
+            <p className='paragraph'>Most recent projects</p>
           </div>
         </div>
         <Swiper
           className='swiper-autoplay'
           slidesPerView={1}
           spaceBetween={30}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 8000, disableOnInteraction: false }}
           pagination={{
             clickable: true,
           }}
@@ -58,10 +52,10 @@ export default function Portfolio(props) {
                     />
                   </div>
                 </a>
-                <h5 className='mt-5 mb-3 text-xl font-semibold text-dark dark:text-white'>
+                <h5 className='mt-5 mb-3 text-xl font-medium text-dark dark:text-white'>
                   {item.title}
                 </h5>
-                <p className='text-base font-medium text-secondary'>
+                <p className='text-base font-normal text-secondary'>
                   {item.description}
                 </p>
               </SwiperSlide>

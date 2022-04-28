@@ -83,7 +83,7 @@ header {
 
 /* Slider */
 .swiper-autoplay {
-  @apply px-4 pb-20 !important;
+  @apply pb-20 sm:px-4 !important;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
