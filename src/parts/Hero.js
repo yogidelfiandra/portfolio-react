@@ -1,51 +1,61 @@
-import React from 'react';
+import { init } from 'ityped';
+import React, { useEffect, useRef } from 'react';
+import { HiDownload } from 'react-icons/hi';
 
 export default function Hero() {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      backDelay: 1500,
+      showCursor: true,
+      strings: ['Front-end Web Developer', 'Freelancer', 'Content Creator'],
+    });
+  }, []);
+
   return (
-    <section id='home' className='pt-36 dark:bg-dark'>
+    <section id='home' className='hero-section'>
       <div className='container'>
-        <div className='flex flex-wrap'>
-          <div className='w-full self-center px-4 md:w-1/2'>
-            <h1 className='text-base font-semibold text-primary md:text-xl'>
-              Halo semua 👋, saya{' '}
-              <span className='mt-1 mb-1.5 block text-4xl font-bold text-dark dark:text-white lg:text-5xl'>
-                Yogi Delfiandra
-              </span>
+        <div className='flex flex-wrap items-center justify-center sm:px-4'>
+          <div className='column'>
+            <h1 className='sub-title'>
+              Hello 👋, my name is{' '}
+              <span className='title'>Yogi Delfiandra</span>
             </h1>
-            <h2 className='mb-5 text-lg font-medium text-secondary lg:text-2xl'>
-              Web Developer &{' '}
-              <span className='text-dark dark:text-white'>Content Creator</span>
+            <h2 className='job-title'>
+              I'm a{' '}
+              <span className=' text-dark dark:text-white' ref={textRef}></span>
             </h2>
-            <p className='mb-10 font-medium leading-relaxed text-secondary'>
-              Pengalaman tingkat tinggi dalam pengembang web,{' '}
-              <br className='' /> menghasilkan pekerjaan yang berkualitas
+            <p className='paragraph mb-10 leading-relaxed'>
+              high degree of expertise in site design and{' '}
+              <br className='hidden lg:block' /> development, generating
+              high-quality results
             </p>
 
-            <div className='flex space-x-2'>
+            <div className='flex flex-wrap justify-center space-y-2 text-center sm:justify-start sm:space-y-0 sm:space-x-2'>
               <a
                 href='https://api.whatsapp.com/send?phone=6282382614275&text=hello%20yogi!'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='btn-primary'
+                className='btn btn-primary w-full sm:w-auto'
               >
-                Hubungi Saya
+                Contact Me
               </a>
               <a
                 href='https://drive.google.com/file/d/1LFYIeeoKe2SSUk8o-mhoDUKCtiviA06a/view?usp=sharing'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='btn-secondary'
+                className='btn btn-secondary flex w-full items-center justify-center sm:w-auto'
               >
-                Download CV
+                <HiDownload style={{ marginRight: 10 }} /> Download CV
               </a>
             </div>
           </div>
-          <div className='w-full self-end px-4 md:w-1/2'>
+          <div className='column px-4 xl:w-2/5'>
             <div className='relative mt-10 md:mt-0 lg:right-0 lg:mt-0'>
               <img
                 src='images/yogidelfiandra.png'
                 alt='yogidelfiandra'
-                className='mx-auto max-w-full md:w-3/4'
+                className='mx-auto max-w-full sm:w-3/4 md:mx-0 md:w-full'
               />
             </div>
           </div>

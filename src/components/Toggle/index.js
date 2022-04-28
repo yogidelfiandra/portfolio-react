@@ -9,7 +9,7 @@ export default function Toogle() {
   const handleClick = () => setClick(!isClick);
 
   return (
-    <div className='mr-5 cursor-pointer px-2 py-2' onClick={handleClick}>
+    <div className='mr-2.5 cursor-pointer p-1.5 lg:p-2' onClick={handleClick}>
       {isClick ? (
         <BiSun
           size={20}
