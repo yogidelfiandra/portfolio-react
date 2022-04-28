@@ -11,15 +11,12 @@ export default function Blog(props) {
   return (
     <section id='blog' className='bg-slate-100 pt-36 pb-32 dark:bg-slate-700'>
       <div className='container'>
-        <div className='w-full px-4'>
+        <div className='w-full sm:px-4'>
           <div className='mx-auto mb-16 max-w-xl text-center'>
-            <h3 className='mb-2 text-lg font-semibold text-primary'>Blog</h3>
-            <h4 className='mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl'>
-              Tulisan Terkini
-            </h4>
-            <p className='text- text-base font-medium text-secondary md:text-lg'>
-              Berbagi cerita melalui sebuah tulisan terkait{' '}
-              <br className='hidden lg:block' /> web developer dan sebagainya
+            <h3 className='sub-title mb-2'>Blog</h3>
+            <h4 className='title lg:text-4xl'>Recent Articles</h4>
+            <p className='paragraph'>
+              A collection of programming <br /> tips and articles
             </p>
           </div>
         </div>
@@ -45,7 +42,7 @@ export default function Blog(props) {
           {props.data.map((item, index) => {
             return (
               <SwiperSlide key={item._id} className=''>
-                <div className='mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-dark'>
+                <div className='mb-10 overflow-hidden rounded-xl bg-white shadow-lg transition duration-500 hover:shadow-md dark:bg-dark dark:shadow-slate-600'>
                   <img
                     src={item.imageUrl}
                     alt={item.title}
@@ -67,7 +64,7 @@ export default function Blog(props) {
                       to={`/blog/${item._id}/detail`}
                       className='rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80'
                     >
-                      Baca Selengkapnya
+                      Read more...
                     </Link>
                   </div>
                 </div>
