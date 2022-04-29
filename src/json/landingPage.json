@@ -132,18 +132,21 @@
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8d",
       "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "title": "Tips Belajar Programming",
+      "date": "05 Mei, 2022",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, eum."
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8e",
       "imageUrl": "https://images.unsplash.com/photo-1558050032-8e05d4037d2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "title": "Review Keyboard GMMK Pro",
+      "date": "05 Mei, 2022",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo doloribus autem vel!"
     },
     {
       "_id": "5d1b6c8b9f8b8e0f4f8b4b8f",
       "imageUrl": "https://images.unsplash.com/photo-1518818608552-195ed130cdf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "title": "Penulisan syntax code yang benar",
+      "date": "05 Mei, 2022",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores!"
     }
   ]

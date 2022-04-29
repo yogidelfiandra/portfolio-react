@@ -44,7 +44,7 @@ export default function About(props) {
             </div>
           </div>
           <div className='column-2'>
-            <span className='animate-pulse rounded-md bg-primary p-2 text-[10px] font-semibold text-dark'>
+            <span className='animate-pulse rounded-md bg-primary p-2 text-[10px] font-semibold text-white dark:text-dark'>
               coming soon
             </span>
             <h4 className='mt-3 mb-5 text-xl font-semibold leading-8 text-dark dark:text-white sm:max-w-md md:text-2xl lg:max-w-lg lg:text-3xl'>

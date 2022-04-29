@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Portfolio(props) {
   return (
-    <section id='portfolio' className='pt-36 pb-16 dark:bg-dark'>
+    <section id='portfolio' className='portfolio-section'>
       <div className='container'>
         <div className='w-full sm:px-4'>
           <div className='mx-auto mb-16 max-w-xl text-center'>
@@ -44,7 +44,7 @@ export default function Portfolio(props) {
                   rel='noopener noreferrer'
                   className=''
                 >
-                  <div className='overflow-hidden rounded-md shadow-md'>
+                  <div className='overflow-hidden rounded-md shadow-lg transition duration-500 hover:shadow-md dark:shadow-slate-600'>
                     <img
                       src={item.imageUrl}
                       alt={item.title}

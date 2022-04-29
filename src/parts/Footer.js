@@ -1,60 +1,55 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <footer className='bg-dark pt-24 pb-7 dark:border-t dark:border-slate-800 '>
+    <footer>
       <div className='container'>
-        <div className='flex flex-wrap'>
-          <div className='mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3'>
-            <h3 className='mb-5 text-4xl font-bold text-white'>kodingHack</h3>
-            <h4 className='mb-2 text-2xl font-bold'>Hubungi Kami</h4>
-            <p>yogi.delfiandra03@gmail.com</p>
-            <p>Jalan Pelajar Gg. Pelajar 4</p>
-            <p>Kabupaten Siak, Riau</p>
+        <div className='flex flex-wrap xl:justify-center xl:space-x-14'>
+          <div className='footer-item md:w-2/5 xl:w-1/4'>
+            <a href='#home' className='text-4xl font-bold text-white'>
+              Portfo<span className='text-primary'>lio.</span>
+            </a>
+            <p className='mt-5 font-normal text-slate-300'>
+              High degree of expertise in site design and development,
+              generating high-quality results
+            </p>
+            <div className='mt-5 flex items-center text-white'>
+              {props.data.map((item, index) => {
+                return (
+                  <a
+                    key={index}
+                    href={item.linkUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='svg-class'
+                  >
+                    <svg
+                      role='img'
+                      width='20'
+                      height='20'
+                      className='fill-current'
+                      viewBox='0 0 24 24'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <title>{item.title}</title>
+                      <path d={item.path} />
+                    </svg>
+                  </a>
+                );
+              })}
+            </div>
           </div>
-
-          <div className='mb-12 w-full px-4 md:w-1/3'>
+          <div className='footer-item md:w-1/4 xl:w-auto'>
             <h5 className='mb-5 text-xl font-semibold text-white'>
-              Kategori Tulisan
+              Quick Links
             </h5>
-            <ul className='text-slate-300'>
-              <li>
-                <Link
-                  to='/programming'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Programming
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/technology'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Technology
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/lifestyle'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Lifestyle
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className='mb-12 w-full px-4 md:w-1/3'>
-            <h5 className='mb-5 text-xl font-semibold text-white'>Tautan</h5>
             <ul className='text-slate-300'>
               <li>
                 <a
                   href='#home'
                   className='mb-3 inline-block text-base hover:text-primary'
                 >
-                  Beranda
+                  Home
                 </a>
               </li>
               <li>
@@ -62,7 +57,15 @@ export default function Footer() {
                   href='#about'
                   className='mb-3 inline-block text-base hover:text-primary'
                 >
-                  Tentang Saya
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#experience'
+                  className='mb-3 inline-block text-base hover:text-primary'
+                >
+                  Skills
                 </a>
               </li>
               <li>
@@ -81,38 +84,82 @@ export default function Footer() {
                   Blog
                 </a>
               </li>
+            </ul>
+          </div>
+          <div className='footer-item md:w-1/3 xl:w-auto'>
+            <h5 className='mb-5 text-xl font-semibold text-white'>
+              Recent Post
+            </h5>
+            <ul className='text-slate-300'>
               <li>
                 <a
-                  href='#contact'
+                  href='#blog'
                   className='mb-3 inline-block text-base hover:text-primary'
                 >
-                  Contact
+                  Tips Belajar Programming
                 </a>
+              </li>
+              <li>
+                <a
+                  href='#blog'
+                  className='mb-3 inline-block text-base hover:text-primary'
+                >
+                  Review Keyboard GMMK Pro
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#blog'
+                  className='mb-3 inline-block text-base hover:text-primary'
+                >
+                  Penulisan syntax code yang benar
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className='footer-item md:w-1/3 xl:w-auto'>
+            <h5 className='mb-5 text-xl font-semibold text-white'>
+              Connect Us
+            </h5>
+            <ul className='text-slate-300'>
+              <li>
+                <a
+                  href='mailto:delfiandra.yogi@gmail.com'
+                  className='mb-3 inline-block text-base hover:text-primary'
+                >
+                  delfiandra.yogi@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href='tel:+6282303251996'
+                  className='mb-3 inline-block text-base hover:text-primary'
+                >
+                  0823-0325-1996
+                </a>
+              </li>
+              <li>
+                <span className='mb-3 inline-block text-base'>
+                  Riau, Indonesia
+                </span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className='w-full border-t border-slate-800 pt-7'>
-          <p className='text-center text-sm font-medium text-slate-500'>
-            Dibuat oleh{' '}
+        <div className='w-full border-t border-slate-800 pt-7 text-center text-sm font-medium text-slate-500 md:flex md:justify-between md:px-4'>
+          <p className='mb-1'>Copyright &#169; 2022. All rights reserved</p>
+          <p>
+            {' '}
+            Design & Developed by{' '}
             <a
               href='https://www.instagram.com/yogidelfiandra/'
               target='_blank'
               rel='noopener noreferrer'
-              className='font-bold text-primary'
+              className='font-semibold text-primary hover:text-opacity-80'
             >
-              Yogi Delfiandra
-            </a>{' '}
-            <br className='md:hidden' />
-            menggunakan{' '}
-            <a
-              href='https://tailwindcss.com/'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='font-bold text-sky-500'
-            >
-              Tailwind CSS
+              yogidelfiandra
             </a>
           </p>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { TiArrowRightThick } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination } from 'swiper';
@@ -9,15 +10,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Blog(props) {
   return (
-    <section id='blog' className='bg-slate-100 pt-36 pb-32 dark:bg-slate-700'>
+    <section id='blog' className='blog-section'>
       <div className='container'>
         <div className='w-full sm:px-4'>
           <div className='mx-auto mb-16 max-w-xl text-center'>
             <h3 className='sub-title mb-2'>Blog</h3>
-            <h4 className='title lg:text-4xl'>Recent Articles</h4>
-            <p className='paragraph'>
-              A collection of programming <br /> tips and articles
-            </p>
+            <h4 className='title lg:text-4xl'>Latest Blog</h4>
+            <p className='paragraph'>Read Inspirational Story Every Week</p>
           </div>
         </div>
 
@@ -25,7 +24,7 @@ export default function Blog(props) {
           className='swiper-autoplay'
           slidesPerView={1}
           spaceBetween={30}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 8000, disableOnInteraction: false }}
           pagination={{
             clickable: true,
           }}
@@ -43,28 +42,25 @@ export default function Blog(props) {
             return (
               <SwiperSlide key={item._id} className=''>
                 <div className='mb-10 overflow-hidden rounded-xl bg-white shadow-lg transition duration-500 hover:shadow-md dark:bg-dark dark:shadow-slate-600'>
-                  <img
-                    src={item.imageUrl}
-                    alt={item.title}
-                    className='w-full'
-                  />
+                  <Link to={`/blog/${item._id}/detail`}>
+                    <img
+                      src={item.imageUrl}
+                      alt={item.title}
+                      className='w-full'
+                    />
+                  </Link>
                   <div className='py-8 px-6'>
-                    <h5>
-                      <Link
-                        to={`/blog/${item._id}/detail`}
-                        className='mb-3 block truncate text-lg font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary xl:text-xl'
-                      >
-                        {item.title}
-                      </Link>
+                    <span className='text-base text-secondary'>
+                      {item.date}
+                    </span>
+                    <h5 className='my-4 block h-14 text-lg font-semibold text-dark  dark:text-white xl:text-xl'>
+                      {item.title}
                     </h5>
-                    <p className='mb-6 text-base font-medium text-secondary'>
-                      {item.description}
-                    </p>
                     <Link
                       to={`/blog/${item._id}/detail`}
-                      className='rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80'
+                      className='flex w-1/2 items-center text-base font-normal text-primary transition duration-500 ease-in hover:opacity-80'
                     >
-                      Read more...
+                      Read More <TiArrowRightThick className='ml-2' />
                     </Link>
                   </div>
                 </div>

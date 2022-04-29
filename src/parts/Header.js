@@ -24,7 +24,7 @@ export default function Header() {
         <div className='relative flex items-center justify-between sm:px-4'>
           <a
             href='#home'
-            className='block py-3 text-xl font-semibold text-dark dark:text-white sm:py-5 sm:text-2xl lg:py-6 lg:text-3xl'
+            className='block py-5 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:py-6 lg:text-3xl'
           >
             Portfo<span className='text-primary'>lio.</span>
           </a>
@@ -49,13 +49,13 @@ export default function Header() {
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a href='#portfolio' className='nav-link'>
-                    Portfolio
+                  <a href='#experience' className='nav-link'>
+                    Skills
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a href='#clients' className='nav-link'>
-                    Clients
+                  <a href='#portfolio' className='nav-link'>
+                    Portfolio
                   </a>
                 </li>
                 <li className='nav-item'>
@@ -83,13 +83,13 @@ export default function Header() {
                   </a>
                 </li>
                 <li className='nav-item' onClick={handleClick}>
-                  <a href='#portfolio' className='nav-link'>
-                    Portfolio
+                  <a href='#experience' className='nav-link'>
+                    Skills
                   </a>
                 </li>
                 <li className='nav-item' onClick={handleClick}>
-                  <a href='#clients' className='nav-link'>
-                    Clients
+                  <a href='#portfolio' className='nav-link'>
+                    Portfolio
                   </a>
                 </li>
                 <li className='nav-item' onClick={handleClick}>

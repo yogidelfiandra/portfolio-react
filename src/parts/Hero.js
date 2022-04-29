@@ -19,25 +19,20 @@ export default function Hero() {
           <div className='column'>
             <h1 className='sub-title'>
               Hello 👋, my name is{' '}
-              <span className='title'>Yogi Delfiandra</span>
+              <span className='title lg:text-5xl'>Yogi Delfiandra</span>
             </h1>
             <h2 className='job-title'>
               I'm a{' '}
               <span className=' text-dark dark:text-white' ref={textRef}></span>
             </h2>
             <p className='paragraph mb-10 leading-relaxed'>
-              high degree of expertise in site design and{' '}
+              High degree of expertise in site design and{' '}
               <br className='hidden lg:block' /> development, generating
               high-quality results
             </p>
 
             <div className='flex flex-wrap justify-center space-y-2 text-center sm:justify-start sm:space-y-0 sm:space-x-2'>
-              <a
-                href='https://api.whatsapp.com/send?phone=6282382614275&text=hello%20yogi!'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='btn btn-primary w-full sm:w-auto'
-              >
+              <a href='#contact' className='btn btn-primary w-full sm:w-auto'>
                 Contact Me
               </a>
               <a
