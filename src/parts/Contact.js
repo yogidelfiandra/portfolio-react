@@ -2,6 +2,8 @@ import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import InputItem from '../components/InputItem';
+import SubHeader from '../components/SubHeader';
 
 export default function Contact() {
   const form = useRef();
@@ -33,52 +35,18 @@ export default function Contact() {
   return (
     <section id='contact' className='contact-section'>
       <div className='container'>
-        <div className='w-full sm:px-4'>
-          <div className='mx-auto mb-16 max-w-xl text-center'>
-            <h3 className='sub-title mb-2'>Contact</h3>
-            <h4 className='title lg:text-4xl'>Contact Me</h4>
-            <p className='paragraph'>Get in touch</p>
-          </div>
-        </div>
+        <SubHeader
+          title='Contact'
+          subtitle='Contact Me'
+          paragraph='Get In Touch'
+        />
 
         <form ref={form} onSubmit={sendEmail}>
           <div className='w-full lg:mx-auto lg:w-1/2'>
-            <div className='input-group'>
-              <label htmlFor='name' className='sub-title'>
-                Name
-              </label>
-              <input
-                type='text'
-                id='name'
-                name='name'
-                className='mt-2 w-full rounded-md bg-slate-100 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
-                required
-              />
-            </div>
-            <div className='input-group'>
-              <label htmlFor='email' className='sub-title'>
-                Email
-              </label>
-              <input
-                type='email'
-                id='email'
-                name='email'
-                className='mt-2 w-full rounded-md bg-slate-100 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
-                required
-              />
-            </div>
-            <div className='input-group'>
-              <label htmlFor='subject' className='sub-title'>
-                Subject
-              </label>
-              <input
-                type='text'
-                id='subject'
-                name='subject'
-                className='mt-2 w-full rounded-md bg-slate-100 p-3 text-dark caret-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary'
-                required
-              />
-            </div>
+            <InputItem title='Name' type='text' id='name' />
+            <InputItem title='Email' type='email' id='email' />
+            <InputItem title='Subject' type='text' id='subject' />
+
             <div className='input-group'>
               <label htmlFor='message' className='sub-title'>
                 Message

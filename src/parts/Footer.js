@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterItem from '../components/FooterItem';
 
 export default function Footer(props) {
   return (
@@ -39,82 +40,31 @@ export default function Footer(props) {
               })}
             </div>
           </div>
+
           <div className='footer-item md:w-1/4 xl:w-auto'>
             <h5 className='mb-5 text-xl font-semibold text-white'>
               Quick Links
             </h5>
             <ul className='text-slate-300'>
-              <li>
-                <a
-                  href='#home'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#about'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  About Me
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#experience'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#portfolio'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#blog'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Blog
-                </a>
-              </li>
+              <FooterItem href='#home' title='Home' />
+              <FooterItem href='#about' title='About Me' />
+              <FooterItem href='#experience' title='Skills' />
+              <FooterItem href='#portfolio' title='Portfolio' />
+              <FooterItem href='#blog' title='Blog' />
             </ul>
           </div>
+
           <div className='footer-item md:w-1/3 xl:w-auto'>
             <h5 className='mb-5 text-xl font-semibold text-white'>
               Recent Post
             </h5>
             <ul className='text-slate-300'>
-              <li>
-                <a
-                  href='#blog'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Tips Belajar Programming
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#blog'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Review Keyboard GMMK Pro
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#blog'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  Penulisan syntax code yang benar
-                </a>
-              </li>
+              <FooterItem href='#blog' title='Tips Belajar Programming' />
+              <FooterItem href='#blog' title='Review Keyboard GMMK Pro' />
+              <FooterItem
+                href='#blog'
+                title='Penulisan Syntax Code yang Benar'
+              />
             </ul>
           </div>
 
@@ -123,22 +73,12 @@ export default function Footer(props) {
               Connect Us
             </h5>
             <ul className='text-slate-300'>
-              <li>
-                <a
-                  href='mailto:delfiandra.yogi@gmail.com'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  delfiandra.yogi@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href='tel:+6282303251996'
-                  className='mb-3 inline-block text-base hover:text-primary'
-                >
-                  0823-0325-1996
-                </a>
-              </li>
+              <FooterItem
+                href='mailto:delfiandra.yogi@gmail.com'
+                title='delfiandra.yogi@gmail.com'
+              />
+              <FooterItem href='tel:+6282169791188' title='+62-821-6979-1188' />
+
               <li>
                 <span className='mb-3 inline-block text-base'>
                   Riau, Indonesia

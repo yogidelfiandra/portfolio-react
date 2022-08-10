@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { RiMenu4Fill } from 'react-icons/ri';
+import NavBrand from '../components/NavBrand';
+import NavItem from '../components/NavItem';
 import Toogle from '../components/Toggle';
 
 export default function Header() {
@@ -22,12 +24,7 @@ export default function Header() {
     <header>
       <div className='container'>
         <div className='relative flex items-center justify-between sm:px-4'>
-          <a
-            href='#home'
-            className='block py-5 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:py-6 lg:text-3xl'
-          >
-            Portfo<span className='text-primary'>lio.</span>
-          </a>
+          <NavBrand />
 
           <div className='flex'>
             <nav
@@ -36,77 +33,12 @@ export default function Header() {
                 click ? 'nav-menu' : 'hidden',
               ].join(' ')}
             >
-              {/* Desktop View */}
-              <ul className='mr-5 hidden py-2  lg:flex lg:space-x-7 xl:space-x-10'>
-                <li className='nav-item'>
-                  <a href='#home' className='nav-link'>
-                    Home
-                  </a>
-                </li>
-                <li className='nav-item'>
-                  <a href='#about' className='nav-link'>
-                    About Me
-                  </a>
-                </li>
-                <li className='nav-item'>
-                  <a href='#experience' className='nav-link'>
-                    Skills
-                  </a>
-                </li>
-                <li className='nav-item'>
-                  <a href='#portfolio' className='nav-link'>
-                    Portfolio
-                  </a>
-                </li>
-                <li className='nav-item'>
-                  <a href='#blog' className='nav-link'>
-                    Blog
-                  </a>
-                </li>
-                <li className='nav-item'>
-                  <a href='#contact' className='nav-link'>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-
-              {/* Mobile view */}
-              <ul className='ml-5 block space-y-5 lg:hidden'>
-                <li className='nav-item' onClick={handleClick}>
-                  <a href='#home' className='nav-link'>
-                    Home
-                  </a>
-                </li>
-                <li className='nav-item' onClick={handleClick}>
-                  <a href='#about' className='nav-link'>
-                    About Me
-                  </a>
-                </li>
-                <li className='nav-item' onClick={handleClick}>
-                  <a href='#experience' className='nav-link'>
-                    Skills
-                  </a>
-                </li>
-                <li className='nav-item' onClick={handleClick}>
-                  <a href='#portfolio' className='nav-link'>
-                    Portfolio
-                  </a>
-                </li>
-                <li className='nav-item' onClick={handleClick}>
-                  <a href='#blog' className='nav-link'>
-                    Blog
-                  </a>
-                </li>
-                <li className='nav-item' onClick={handleClick}>
-                  <a href='#contact' className='nav-link'>
-                    Contact
-                  </a>
-                </li>
-              </ul>
+              <NavItem />
+              <NavItem isMobile />
             </nav>
+
             <div className='flex'>
               <Toogle />
-
               <div
                 className='cursor-pointer rounded-md bg-primary p-1.5 lg:hidden'
                 onClick={handleClick}

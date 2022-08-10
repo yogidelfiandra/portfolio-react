@@ -5,18 +5,18 @@ import { Autoplay, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SubHeader from '../components/SubHeader';
 
 export default function Portfolio(props) {
   return (
     <section id='portfolio' className='portfolio-section'>
       <div className='container'>
-        <div className='w-full sm:px-4'>
-          <div className='mx-auto mb-16 max-w-xl text-center'>
-            <h3 className='sub-title mb-2'>Portfolio</h3>
-            <h4 className='title lg:text-5xl'>My Projects</h4>
-            <p className='paragraph'>Most recent projects</p>
-          </div>
-        </div>
+        <SubHeader
+          title='Portfolio'
+          subtitle='My Projects'
+          paragraph='Most Recent Projects'
+        />
+
         <Swiper
           className='swiper-autoplay'
           slidesPerView={1}

@@ -7,18 +7,17 @@ import { Autoplay, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SubHeader from '../components/SubHeader';
 
 export default function Blog(props) {
   return (
     <section id='blog' className='blog-section'>
       <div className='container'>
-        <div className='w-full sm:px-4'>
-          <div className='mx-auto mb-16 max-w-xl text-center'>
-            <h3 className='sub-title mb-2'>Blog</h3>
-            <h4 className='title lg:text-4xl'>Latest Blog</h4>
-            <p className='paragraph'>Read Inspirational Story Every Week</p>
-          </div>
-        </div>
+        <SubHeader
+          title='Blog'
+          subtitle='Latest Blog'
+          paragraph='Read Inspirational Story Every Week'
+        />
 
         <Swiper
           className='swiper-autoplay'

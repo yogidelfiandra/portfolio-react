@@ -1,19 +1,16 @@
 import React from 'react';
 import { BsPatchCheckFill } from 'react-icons/bs';
+import SubHeader from '../components/SubHeader';
 
 export default function Experience(props) {
   return (
     <section id='experience' className='experience-section'>
       <div className='container'>
-        <div className='w-full'>
-          <div className='mx-auto mb-16 max-w-xl text-center'>
-            <h3 className='sub-title mb-2'>Skills</h3>
-            <h4 className='title lg:text-4xl'>My Experience</h4>
-            <p className='paragraph'>
-              Some of the tools I use to <br /> build web applications
-            </p>
-          </div>
-        </div>
+        <SubHeader
+          title='Skills'
+          subtitle='My Experience'
+          paragraph='Some of the tools I use to build web applications'
+        />
 
         <div className='flex flex-wrap justify-center'>
           {props.data.map((item, index1) => {
