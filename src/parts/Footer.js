@@ -81,7 +81,7 @@ export default function Footer(props) {
 
               <li>
                 <span className='mb-3 inline-block text-base'>
-                  Riau, Indonesia
+                  Padang, Sumatera Barat
                 </span>
               </li>
             </ul>
@@ -94,12 +94,12 @@ export default function Footer(props) {
             {' '}
             Design & Developed by{' '}
             <a
-              href='https://www.instagram.com/yogidelfiandra/'
+              href='https://www.instagram.com/dosenkoding/'
               target='_blank'
               rel='noopener noreferrer'
               className='font-semibold text-primary hover:text-opacity-80'
             >
-              yogidelfiandra
+              dosenkoding
             </a>
           </p>
         </div>

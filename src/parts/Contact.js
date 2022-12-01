@@ -21,12 +21,12 @@ export default function Contact() {
       .then(
         (result) => {
           if (result.status === 200) {
-            toast.success('Pesan berhasil dikirim!');
+            toast.success('Message sent successfully!');
           }
           e.target.reset();
         },
         (error) => {
-          toast.error('Gagal mengirin pesan!');
+          toast.error('Failed to send a message!');
           e.target.reset();
         }
       );
