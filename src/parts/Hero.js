@@ -26,9 +26,8 @@ export default function Hero() {
               <span className=' text-dark dark:text-white' ref={textRef}></span>
             </h2>
             <p className='paragraph mb-10 leading-relaxed'>
-              High degree of expertise in site design and{' '}
-              <br className='hidden lg:block' /> development, generating
-              high-quality results
+              Assist companies in developing website{' '}
+              <br className='hidden lg:block' /> applications to grow bigger.
             </p>
 
             <div className='flex flex-wrap justify-center space-y-2 text-center sm:justify-start sm:space-y-0 sm:space-x-2'>
@@ -36,7 +35,7 @@ export default function Hero() {
                 Contact Me
               </a>
               <a
-                href='https://drive.google.com/file/d/1tSL5utnl3fUBKJtYXytgZK5Rmd3QtXCA/view?usp=sharing'
+                href='https://drive.google.com/file/d/1xlygU4eVwBPYyvI0DskyLu-M3PuWmzIy/view'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='btn btn-secondary flex w-full items-center justify-center sm:w-auto'

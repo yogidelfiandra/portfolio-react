@@ -11,7 +11,7 @@ export default function Footer(props) {
               Portfo<span className='text-primary'>lio.</span>
             </a>
             <p className='mt-5 font-normal text-slate-300'>
-              High degree of expertise in site design and development,
+              A high degree of expertise in site design and development,
               generating high-quality results
             </p>
             <div className='mt-5 flex items-center text-white'>
@@ -81,7 +81,7 @@ export default function Footer(props) {
 
               <li>
                 <span className='mb-3 inline-block text-base'>
-                  Padang, Sumatera Barat
+                  Tualang, Kabupaten Siak
                 </span>
               </li>
             </ul>
@@ -89,7 +89,9 @@ export default function Footer(props) {
         </div>
 
         <div className='w-full border-t border-slate-800 pt-7 text-center text-sm font-medium text-slate-500 md:flex md:justify-between md:px-4'>
-          <p className='mb-1'>Copyright &#169; 2022. All rights reserved</p>
+          <p className='mb-1'>
+            Copyright &#169; 2022 - 2023. All rights reserved
+          </p>
           <p>
             {' '}
             Design & Developed by{' '}

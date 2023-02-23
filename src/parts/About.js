@@ -11,10 +11,11 @@ export default function About(props) {
               Developer <span className='text-primary'>& Designer</span>
             </h4>
             <p className='paragraph max-w-xl'>
-              I work as a web developer on the front end. I can deliver
-              pixel-perfect design and tidy coding. I also use web animations to
-              make the website more engaging. Your website will be accessible to
-              all users, regardless of their device, with a responsive design.
+              I am a Front-End Web Developer pursuing a master's in Informatics
+              Engineering. I have high enthusiasm for developing websites with
+              attractive and responsive designs. I have expertise in HTML, CSS,
+              JavaScript, and TypeScript as well as several front-end
+              frameworks. I also studied design techniques using Figma.
             </p>
             <p className='paragraph pt-5 pb-3'>Connect with me:</p>
             <div className='flex items-center'>
@@ -52,10 +53,9 @@ export default function About(props) {
               <span className='text-primary'>dosenkoding!</span>
             </h4>
             <p className='paragraph max-w-xl'>
-              dosenkoding is a digital platform that makes learning web
-              programming simple for friends. It is envisaged that this platform
-              will assist friends in becoming reliable web developers and
-              contributing to the digital IT sector.
+              Dosenkoding is a programming learning platform that provides
+              various learning resources and interactive features to help users
+              develop their programming skills in a fun and effective way.
             </p>
             <p className='paragraph pt-5 pb-3'>Connect with platform:</p>
             <div className='flex items-center'>
