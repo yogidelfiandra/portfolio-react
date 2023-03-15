@@ -35,7 +35,7 @@ export default function Hero() {
                 Contact Me
               </a>
               <a
-                href='https://drive.google.com/file/d/1xlygU4eVwBPYyvI0DskyLu-M3PuWmzIy/view'
+                href='https://drive.google.com/file/d/11glKRUUfbVfOme35RVphi45GxmgDygUj/view?usp=share_link'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='btn btn-secondary flex w-full items-center justify-center sm:w-auto'
